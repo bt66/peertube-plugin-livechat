@@ -169,6 +169,24 @@ class ProsodyConfigContent {
       's2s' // Handle server-to-server connections
     ])
 
+    this.global.set('modules_disabled', [
+      // 'offline' // Store offline messages
+      // 'c2s' // Handle client connections
+      's2s' // Handle server-to-server connections
+    ])
+
+    this.global.set('sql', [
+        'driver', 'PostgreSQL',
+        'database', 'prosody',
+        'host', '10.10.5.99',
+        'port', 5432,
+        'username', 'carakan',
+        'password', '2wsx1qaz',
+        'sql_manage_tables', true
+    ])
+
+    this.global.set('sql_manage_tables', true)
+
     this.global.set('cross_domain_bosh', false)
     this.global.set('consider_bosh_secure', false)
     this.global.set('cross_domain_websocket', false)
